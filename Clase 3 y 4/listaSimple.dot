@@ -1,0 +1,9 @@
+digraph G {
+rankdir=LR;
+node [shape=record];
+node1 [label="{1|Elemento 1}"];
+node6 [label="{6|Elemento 2}"];
+node3 [label="{3|Elemento 3}"];
+node1 -> node6;
+node6 -> node3;
+}
