@@ -33,6 +33,16 @@ class Matriz:
                     actual = actual.derecha
                 actual.derecha = nuevo
                 nuevo.izquierda = actual
+            else:
+                actual = fila.acceso
+                while actual.derecha != None:
+                    if nuevo.col < actual.derecha.col:
+                        nuevo.derecha = actual.derecha
+                        nuevo.izquierda = actual
+                        actual.derecha.izquierda = nuevo
+                        actual.derecha = nuevo
+                        break
+                    actual = actual.derecha
 
         if col.acceso == None:
             col.acceso = nuevo
@@ -47,6 +57,16 @@ class Matriz:
                     actual = actual.abajo
                 actual.abajo = nuevo
                 nuevo.arriba = actual
+            else:
+                actual = col.acceso
+                while actual.abajo != None:
+                    if nuevo.fila < actual.abajo.fila:
+                        nuevo.abajo = actual.abajo
+                        nuevo.arriba = actual
+                        actual.abajo.arriba = nuevo
+                        actual.abajo = nuevo
+                        break
+                    actual = actual.abajo
 
 
     def graficar(self):
