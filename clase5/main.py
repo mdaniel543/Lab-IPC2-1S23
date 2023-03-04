@@ -16,5 +16,8 @@ if __name__ == '__main__':
     # matriz.insertar(1, 2, "b")
     # matriz.insertar(1, 3, "c")
 
+    matriz.recorrer()
     matriz.graficar()
+
+
 

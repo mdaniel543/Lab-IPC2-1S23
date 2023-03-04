@@ -20,6 +20,21 @@ class Matriz:
         fila = self.filas.buscar(pfila)
         col = self.columnas.buscar(pcol)
 
+        actual = fila.acceso
+        while actual != None:
+            if actual.col == pcol:
+                actual.valor = valor
+                return
+            actual = actual.derecha
+
+        actual = col.acceso
+        while actual != None:
+            if actual.fila == pfila:
+                actual.valor = valor
+                return
+            actual = actual.abajo
+
+        # Si no hay un nodo existente en esta posición, inserte un nuevo nodo
         if fila.acceso == None:
             fila.acceso = nuevo
         else:
@@ -68,6 +83,38 @@ class Matriz:
                         break
                     actual = actual.abajo
 
+    def buscar(self, pfila, pcol):
+        fila = self.filas.buscar(pfila)
+        if fila == None:
+            return None
+        else:
+            actual = fila.acceso
+            while actual != None:
+                if actual.col == pcol:
+                    return actual
+                actual = actual.derecha
+            return None
+    def recorrer(self):
+        actual = self.filas.primero
+        if actual == None:
+            print("La lista esta vacia")
+        while actual != None:
+            actual2 = actual.acceso
+            while actual2 != None:
+                print(actual2.valor)
+                actual2 = actual2.derecha
+            actual = actual.siguiente
+
+    def buscarbyValor(self, valor):
+        actual = self.filas.primero
+        while actual != None:
+            actual2 = actual.acceso
+            while actual2 != None:
+                if actual2.valor == valor:
+                    return actual2
+                actual2 = actual2.derecha
+            actual = actual.siguiente
+        return None
 
     def graficar(self):
         if self.filas.primero == None:

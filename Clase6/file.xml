@@ -1,0 +1,32 @@
+<LitadoPeliculas>
+    <Pelicula>
+        <Titulo>El padrino</Titulo>
+        <Director>Francis Ford Coppola</Director>
+        <Anio>1972</Anio>
+        <Duracion>175</Duracion>
+    </Pelicula>
+    <Pelicula>
+        <Titulo>El padrino II</Titulo>
+        <Director>Francis Ford Coppola</Director>
+        <Anio>1974</Anio>
+        <Duracion>202</Duracion>
+    </Pelicula>
+    <Pelicula>
+        <Titulo>El padrino III</Titulo>
+        <Director>Francis Ford Coppola</Director>
+        <Anio>1990</Anio>
+        <Duracion>162</Duracion>
+    </Pelicula>
+    <Pelicula>
+        <Titulo>El padrino IV</Titulo>
+        <Director>Francis Ford Coppola</Director>
+        <Anio>2000</Anio>
+        <Duracion>200</Duracion>
+    </Pelicula>
+    <Pelicula>
+        <Titulo>El padrino V</Titulo>
+        <Director>Francis Ford Coppola</Director>
+        <Anio>2005</Anio>
+        <Duracion>180</Duracion>
+    </Pelicula>
+</LitadoPeliculas>
