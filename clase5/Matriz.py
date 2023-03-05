@@ -100,6 +100,7 @@ class Matriz:
             print("La lista esta vacia")
         while actual != None:
             actual2 = actual.acceso
+            print("Fila: " + str(actual.id))
             while actual2 != None:
                 print(actual2.valor)
                 actual2 = actual2.derecha
@@ -145,12 +146,9 @@ class Matriz:
 
             aux = self.columnas.primero
             while aux != None:
-                if actual.acceso != None:
-                    if actual.acceso.col == aux.id:
-                        file.write("<td>" + str(actual.acceso.valor) + "</td>\n")
-                        actual.acceso = actual.acceso.derecha
-                    else:
-                        file.write("<td></td>\n")
+                temp = self.buscar(actual.id, aux.id)
+                if temp != None:
+                    file.write("<td bgcolor=\"#00FF00\">" + str(temp.valor) + "</td>\n")
                 else:
                     file.write("<td></td>\n")
                 aux = aux.siguiente
