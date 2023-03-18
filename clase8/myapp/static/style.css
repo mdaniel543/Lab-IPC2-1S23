@@ -1,0 +1,79 @@
+/* Estilos para el encabezado */
+#encabezado h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+#encabezado h2 {
+  font-size: 2em;
+  margin: 0;
+}
+
+#encabezado p {
+  font-size: 1.2em;
+}
+
+#encabezado h3 {
+  font-size: 1.5em;
+}
+
+/* Estilos para la tabla */
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+th,
+td {
+  padding: 5px;
+  text-align: left;
+  border: 1px solid #666666;
+}
+
+/* Estilos para la imagen */
+img {
+  width: 50%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}
+
+/* Estilos para el formulario */
+#formulario {
+  margin: 20px auto;
+  width: 50%;
+}
+
+label {
+  font-size: 1.2em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #110e2e;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+button:hover {
+  background-color: #555;
+}
