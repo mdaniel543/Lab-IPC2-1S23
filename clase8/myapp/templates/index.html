@@ -3,75 +3,46 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ejemplo de HTML con estilos inline</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
   </head>
-  <body style="background-color: #f2f2f2; font-family: Arial, sans-serif;">
-    <div id="encabezado" style="text-align: center;">
-      <h1>
-        Hola mundo!
-      </h1>
-      <h2 style="color: #666666;">
-        Subtítulo 1
-      </h2>
-      <p>
-        Hola compañeros.
-      </p>
-      <h3 style="color: #666666;">
-        Subtítulo 2
-      </h3>
-      <p>
-        Van a ganar IPC2
-      </p>
+  <body style="background-color: #f2f2f2; font-family: Arial, sans-serif">
+    <div id="encabezado" style="text-align: center">
+      <h1>Hola mundo!</h1>
+      <h2 style="color: #666666">Subtítulo 1</h2>
+      <p>Hola compañeros.</p>
+      <h3 style="color: #666666">Subtítulo 2</h3>
+      <p>Van a ganar IPC2</p>
     </div>
     <div id="contenido">
-
-      <h4 style="color: #666666; text-align: center;">Tabla de ejemplo</h4>
-      <table style="border-collapse: collapse;">
-        <tr>
-          <th>Nombre</th>
-          <th>Edad</th>
-          <th>País</th>
-        </tr>
-        <tr>
-          <td>Juan</td>
-          <td>28</td>
-          <td>Argentina</td>
-        </tr>
-        <tr>
-          <td>María</td>
-          <td>32</td>
-          <td>España</td>
-        </tr>
-      </table>
-
-      <h3 style="color: #666666; text-align: center;">Imagen de ejemplo</h3>
-      <img src="https://via.placeholder.com/500x300" alt="Imagen de ejemplo"
-        style="display: block; margin: auto;">
-
-      <div id="formulario">
-        <h3 style="color: #666666;">Formulario de ejemplo</h3>
-        <form action="/add/" method="POST" >
-            {% csrf_token %}
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre">
-         
-          <button id="submit" type="submit">
-            Enviar
-          </button>
-        </form>
-       
+      <div
+        style="
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+          width: 50%;
+          background-color: #ffffff;
+          padding: 50px;
+          border: 1px solid #666666;
+          margin-top: 20px;
+        "
+      >
+        <ul style="list-style-type: none; margin: 0; padding: 0">
+          <li style="display: inline">
+            <a href="/add/" style="color: #000">Agregar</a>
+          </li>
+          <li style="display: inline">
+            <a href="/list/" style="color: #000"> Listar </a>
+          </li>
+        </ul>
       </div>
     </div>
-
-    <div id="pie-de-pagina"
-      style="text-align: center; background-color: #666666; color: #ffffff;
-      padding: 10px; margin-top: 20px;">
-      <p>Derechos de autor © 2023</p>
-    </div>
-
   </body>
-  <main role="main">{% block content %}{% endblock %}</main>
+ 
+  <main role="main">
+    {% block content %}{% endblock %}
+  </main>
 </html>
