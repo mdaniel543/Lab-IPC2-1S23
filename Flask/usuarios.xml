@@ -1,0 +1,29 @@
+<usuarios>
+    <usuario>
+        <email>juan@gmail.com</email>
+        <nombre>juan</nombre>
+        <edad>15</edad>
+        <genero>M</genero>
+        <mensaje>no me gusta esto para nada</mensaje>
+    </usuario>
+    <usuario>
+        <email>Pedrogmail.com</email>
+        <nombre>pedro</nombre>
+        <edad>16</edad>
+        <genero>M</genero>
+        <mensaje>esto es brasil 32 2</mensaje>
+    </usuario>
+    <usuario>
+        <nombre>maria</nombre>
+        <email>maria@gmail.com</email>
+        <edad>16</edad>
+        <genero>F</genero>
+        <mensaje>hay una serpiente</mensaje>
+    </usuario>
+    <usuario>
+                <nombre>Test</nombre>
+                <email>test@mail.com</email>
+                <edad>15</edad>
+                <genero>M</genero>
+                <mensaje>jd sd sd</mensaje>
+            </usuario></usuarios>

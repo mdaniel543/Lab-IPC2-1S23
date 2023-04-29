@@ -9,6 +9,7 @@
       <th>Edad</th>
       <th>Genero</th>
       <th>Mensaje</th>
+      <th>Acciones</th>
     </tr>
     {% for persona in personas %}
     <tr>
@@ -17,6 +18,10 @@
       <td>{{ persona.edad }}</td>
       <td>{{ persona.genero }}</td>
       <td>{{ persona.mensaje }}</td>
+      <td>
+        <a href="/get/{{ persona.email }}">Editar</a>
+        <a href="/delete/{{ persona.email }}">Eliminar</a>
+      </td>
     </tr>
     {% endfor %}
   </table>

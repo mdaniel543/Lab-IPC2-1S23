@@ -1,0 +1,10 @@
+{% extends 'index.html' %} {% block content %}
+<div id="resultado" style="text-align: center">
+  <h3 style="color: #666666">Resultado de la creación del usuario</h3>
+  <p>Email: {{email}}</p>
+  <p>Mensaje: {{mensaje}} palabras</p>
+  <div style="margin-top: 20px">
+    <a href="/list">volver</a>
+  </div>
+</div>
+{% endblock content %}

@@ -71,9 +71,17 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  
 }
 
 button:hover {
   background-color: #555;
+}
+
+#resultado {
+  margin: 20px auto;
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
